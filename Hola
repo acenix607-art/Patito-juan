@@ -1,0 +1,22 @@
+<div style="text-align: center; margin-top: 100px; font-family: monospace; font-size: 20px;">
+  <pre>
+      _
+   __(.)< (¡CUAC! ¡CUAC!)
+   \___)
+~~~~~~~~~~~~~~~~~~
+  </pre>
+  <h1 id="mensaje">¡Has sido visitado por el Pato!</h1>
+  <p id="contador">Desaparecerá en 20 segundos...</p>
+</div>
+
+<script>
+  let tiempo = 20;
+  let intervalo = setInterval(() => {
+    tiempo--;
+    document.getElementById('contador').innerText = "Desaparecerá en " + tiempo + " segundos...";
+    if (tiempo <= 0) {
+      document.body.innerHTML = "<h1>¡El pato se ha ido!</h1>";
+      clearInterval(intervalo);
+    }
+  }, 1000);
+</script>
