@@ -10,7 +10,7 @@
 </div>
 
 <script>
-  let tiempo = 20;
+  let tiempo = 80;
   let intervalo = setInterval(() => {
     tiempo--;
     document.getElementById('contador').innerText = "Desaparecerá en " + tiempo + " segundos...";
